@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Drywall and Plaster">
-<meta name="keywords" content="drywall,plaster,finished basement">	
-
-<title>Yeater,LLC</title>
-	
-<style>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Drywall and Plaster">
+    <meta name="keywords" content="drywall,plaster,finished basement">
+    <title>Yeater,LLC</title>
+    <style>
 
 
 .navbar {
@@ -37,22 +35,52 @@
 .navbar a:hover {
   	background: #ddd;
   	color: black;
+	font-size:20px;
 	}
 
 .thebody{
 	background-color:#F8F9F9 
 	}
 
+@media only screen and (max-width: 600px) {
 .banner {
 	background-image: url(yeaterLogoTrans.png), url(Background.jpg);
-	height: 500px;
+	height: 300px;
 	background-repeat: no-repeat, no-repeat;
-	background-size: 250px, 100% 100%;
+	background-size: 100px, 100% 100%;
 	background-position: center, left top;
     	border-color: #E5E8E8;
     	border-width: 20px;
     	border-style: solid;
-	}		
+	}	
+
+.column {
+	flex: 40%;
+	padding: 10px 20px;
+	width:300px;
+	height:250px; 
+	}
+}
+
+@media only screen and (min-width: 601px) {
+.banner {
+	background-image: url(yeaterLogoTrans.png), url(Background.jpg);
+	height: 500px;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 200px, 100% 100%;
+	background-position: center, left top;
+    	border-color: #E5E8E8;
+    	border-width: 20px;
+    	border-style: solid;
+	}
+
+.column {
+	flex: 40%;
+	padding: 10px 20px;
+	width:400px;
+	height:300px; 
+	}
+}
 
 .row {
   	display: flex;
@@ -63,52 +91,71 @@
 	font-family:Arial;
 	}
 
-.column {
-	flex: 40%;
-	padding: 10px 20px;
-	width:360px;
-	height:300px; 
+.littletext {
+	font-size:18px;
+	text-align:center;
+	font-family:Arial;
+	}
+
+.bigtext {
+	font-size:25px;
+	text-align:center;
+	font-family:Arial;
+	}
+
+.verybigtext {
+	font-size:30px;
+	text-align:center;
+	font-family:Arial;
 	}
 
 </style>
-  
-<div class="navbar">  
-  <a href="#Home">Home</a> &nbsp; 
-  <a href="#ContactUs">Contact</a> &nbsp; 
-  <a href="#Examples">Examples</a> &nbsp; 
-  <a href="#Services">Services</a> &nbsp;
-</div> 
-
-<body class="thebody">
-<header>
-<a id="Home"></a>
-<div class="banner"></div>
-
-<div style="font-size:30px;font-family:Arial;text-align:center">Yeater, LLC Drywall Service</div>	
-<div style="font-size:25px;font-family:Arial;text-align:center">Phone: 248-862-4363</div>			
-</header>
-<p></p>
-<div style="font-size:25px;text-align:center;font-family:Arial;"> <A id="Services">Services</a></div>
-<p></p>
-<div style="font-size:18px;text-align:center;font-family:Arial;"> Serving all of Southeast Michigan with residental drywall, plaster repair, and texturing</div>
-<div style="font-size:18px;text-align:center;font-family:Arial;"> We do the whole spectrum of residental drywall work from hanging, finishing, and repair.</div>			
-<p></p>
-<div style="font-size:25px;text-align:center;font-family:Arial;"><A id="Examples"> Examples </a></div>
-<p></p>
-<div class="row">
-  <div><img class="column" src="garage.jpg" alt="Finished Garage" ><p>Finished Garage</p></div>
-
-  <div><img class="column" src="Basement.jpg"  alt="Finished Basement" ><p>Basement Finishing</p></div>
-
-  <div><img class="column" src="Repair.jpg"  alt="Damage Repair" ><p>Repairs</p></div>
-</div>
-<div style="font-size:25px;text-align:center;font-family:Arial;"> <A id="Services">Contact Us</a></div>
-<div style="font-size:18px;font-family:Arial;text-align:center"><A id="ContactUs">Phone: 248-862-4363</a></div>
-<p></p>
-<div style="font-size:18px;text-align:center;font-family:Arial;">Visit us on Facebook <a href="https://www.facebook.com/YeaterDrywall/"><img src="facebooklogo.png" width="50" height="50" title="Facebook Link" alt="Facebook"></a></div>
-<footer>					
-<p>Copyright © Yeater, LLC 2020</p>
-</footer>
-
-
-</body></html>
+  </head>
+  <body class="thebody">
+    <div class="navbar"> <a href="#Home">Home</a> &nbsp; <a
+        href="#ContactUs">Contact</a> &nbsp; <a href="#Examples">Examples</a>
+      &nbsp; <a href="#Services">Services</a> &nbsp;
+    </div>
+    <header>
+      <a id="Home"></a>
+      <div class="banner"></div>
+      <div class="verybigtext">Yeater, LLC Drywall Service</div>
+      </header>
+    <p><a id="Services"></p>
+    <div class="bigtext">Services</a></div>
+    <p></p>
+    <div class="littletext"> Serving all of Southeast Michigan with residential drywall, plaster repair, and texturing.</div>
+    <div class="littletext"> We do the whole spectrum of residential drywall work from hanging, finishing, and repair.</div>
+    <p></p>
+    <div class="bigtext"><a id="Examples"> Examples </a></div>
+    <p></p>
+    <div class="row">
+      <div><img class="column" src="garage.jpg" alt="Garage Finishing" >
+        <p>Garage Finishing</p>
+      </div>
+      <div><img class="column" src="Basement.jpg" alt="Basement Finishing" >
+        <p>Basement Finishing</p>
+      </div>
+      <div><img class="column" src="Repair.jpg" alt="Damage Repair" >
+        <p>Repairs</p>
+      </div>
+    </div>
+    <div class="bigtext"> <a id="Services">Contact Us</a></div>
+    <div class="littletext"><a id="ContactUs">Yeater, LLC</a></div>
+    <div class="littletext"><a id="ContactUs">5 Parakeet Hill</a></div>
+    <div class="littletext"><a id="ContactUs">Lake Orion, Michigan </a></div>
+    <div class="littletext"><a id="ContactUs">Phone: 248-862-4363</a></div>
+    <div class="littletext"><a id="ContactUs">email: wyeaterllc@gmail.com</a></div>
+    <p></p>
+    <p></p>
+    <div style="font-size:18px;text-align:center;font-family:Arial;">Visit
+      us on Facebook <a href="https://www.facebook.com/YeaterDrywall/"><img src="facebooklogo.png" title="Facebook Link" alt="Facebook"
+          width="50" height="50"></a></div>
+    <footer>
+      <p></p>
+      <p></p>
+      <p style="font-size:15px;text-align:center;font-family:Arial;">Copyright
+        © Yeater, LLC 2020</p>
+    </footer>
+  </body>
+</html>
