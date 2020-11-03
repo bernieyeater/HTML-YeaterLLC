@@ -1,0 +1,140 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	text-align: left;
+	list-style-type: none;
+}
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 16px;
+}
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+.thebody {
+	background-color: #F8F9F9
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 7px 7px 7px 7px;
+	font-size: 20px;
+	text-align: Center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 1px;
+}
+.littletext {
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+.bigtext {
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+.verybigtext {
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+.services-wrapper {
+	float: left;
+	width: 100%;
+}
+.container-wrapper {
+	max-width: 1170px;
+	margin: 0px auto;
+}
+p.sub-title {
+	max-width: 61%;
+	margin: 0px auto;
+	line-height: 23px;
+	font-size: 18px;
+	margin-top: 12px;
+	margin-bottom: 13px;
+}
+.section-title {
+	margin-top: 34px;
+	margin-bottom: 2px;
+}
+.verybigtext {
+	margin-top: 34px;
+}
+.contact-info {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.contact-info ul {
+	padding: 0px;
+	margin: 0px;
+}
+.contact-info ul li.cont-title {
+	font-size: 25px;
+}
+.contact-info ul li {
+	font-size: 18px;
+	margin-bottom: 0px;
+	list-style: none;
+}
+.navbar ul {
+	padding: 0px;
+	margin: 0px;
+}
+.navbar ul li {
+	list-style: none;
+}
+ @media only screen and (max-width: 600px) {
+.banner {
+	background-image: url(../images/yeaterLogoTrans.png), url(../images/Background.jpg);
+	height: 300px;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100px, 100% 100%;
+	background-position: center, left top;
+	border-color: #E5E8E8;
+	border-width: 20px;
+}
+.column {
+	flex: 40%;
+	padding: 10px 20px;
+	width: 300px;
+	height: 250px;
+}
+}
+ @media only screen and (min-width: 601px) {
+.banner {
+	background-image: url(../images/yeaterLogoTrans.png), url(../images/Background.jpg);
+	height: 500px;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 200px, 100% 100%;
+	background-position: center, left top;
+	border-color: #E5E8E8;
+	border-width: 20px;
+}
+.column {
+	flex: 30%;
+	padding: 2px 2px 2px 2px;
+	width: 360px;
+	height: 300px;
+	border: 1px solid #000000;
+	margin: 5px 5px 5px 5px;
+}
+}
