@@ -1,2 +1,3 @@
 # YeaterLLC
- Website for my Son's Drywall business (yeaterllc.com).  Learning how to use HTML and CSS.
+ Website for my Son's Drywall business (yeaterllc.com).  
+ Learning how to code HTML and CSS.
