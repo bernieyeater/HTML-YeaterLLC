@@ -137,4 +137,7 @@ p.sub-title {
 	border: 1px solid #000000;
 	margin: 5px 5px 5px 5px;
 }
+h3 {
+	text-align: center;
+}
 }
